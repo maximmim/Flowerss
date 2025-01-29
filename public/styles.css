@@ -1,0 +1,430 @@
+@import url("./roboto/roboto.css");
+:root {
+  --dw:rgba(0, 0, 0, 0.5);
+  --global_width:70%;
+}
+* {
+    font-family: "Roboto";
+}
+
+.Floter p {
+    text-align: center;
+    margin-top: 300px;
+}
+
+Header .image-container {
+    position: absolute;
+    width: var(--global_width);
+    height: 50%;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    border-radius: 10px;
+    
+}
+Header .image-container::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:var(--dw);
+  border-radius: 10px;
+}
+Header .dwa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+    border-radius: 10px;
+}
+
+Header .overlay-text {
+
+    position: absolute;
+    left: 70px;
+    top: 100px;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 35px;
+    max-width: 230px;
+    color: rgb(255, 255, 255); 
+}
+
+Header .overlay-text::after {
+  
+  content: "Любов у кожній пелюстці";
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  font-weight: 300;
+  font-size: 15px;
+  max-width: 230px;
+}
+
+Header .dwg {
+  font-size: 20px;
+  position: relative;
+  top: -2px;
+  left: -3px;
+}
+
+
+
+Header .fw {
+  width: 40px;
+  height:38px;
+  transition: background-color 0.5s ease;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translate(0px,-50%);
+  z-index: 1000000000;
+}
+Header .fw:hover {
+
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+Header .dwf {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 100px;
+}
+
+Header .Urs_mdl {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  right: 10px;
+  top: 70px;
+  z-index: 1000;
+  opacity: 0;
+  border-radius: 5px;
+  transition: opacity 0.2s ease;
+  background-color: rgba(236, 233, 233, 0.65);
+}
+
+Header .Sop_modal {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  right: 10px;
+  top: 70px;
+  z-index: 1000000000000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-left: 0.3px solid rgba(128, 128, 128, 0.5);
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-bottom: 0.3px solid rgba(128, 128, 128, 0.5);
+}
+
+Header .icon_usr {
+  width: 40px;
+  height:40px;
+  transition: background-color 0.5s ease;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 10000000000000000000;
+  transform: translate(0px,-50%);
+}
+Header .icon_usr:hover {
+
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+Header .Shop {
+  position: relative;
+  width: var(--global_width);
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 60%;
+}
+
+Header .color_ball {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: 5px;
+}
+Header .fe {    display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+Header .price {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+
+
+
+Header .ipo {
+  position: relative;
+  width: 95%;
+  margin: 10px;
+  left: 46%;
+  transform: translate(-50%);
+  height: 70px;
+  background-color: rgba(234, 234, 234, 0.3);
+  border-radius: 5px;
+  p {
+    position: relative;
+    top: 30%;
+    transform: translate(0px, -50%);
+    margin-left: 80px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+
+Header .ipo_img {
+  position: relative;
+  left: 10px;
+  top: -15%;
+  transform: translate(0px, -50%);
+  img { 
+  transition: transform 0.5s ease, height 0.5s ease, width 0.5s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+z-index: 10;
+  }
+  img:hover {
+    width: 100px;
+    height: 100px;
+    transform: translate(-50px);
+  }
+}
+
+.Koshik {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(0px,-50%);
+  font-size: 25px;
+}
+
+.Exitsf {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0px,-50%);
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  transition: 0.5s ease background-color;
+  border-radius: 5px;
+}
+
+.Exitsf:hover {
+
+  background-color: rgba(190, 190, 190, 0.3);
+}
+
+.plaw {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px rgb(222, 222, 222) solid;
+}
+
+.cwa {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+
+.UOw {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(128, 128, 128, 0.5);
+ 
+  display: none;
+}
+
+.Korzina_full {
+  position: fixed;
+  
+  top: 50%;
+  width: 20%;
+  height: 75%;
+  transition: all 0.3s ease;
+  transform: translate(-100%,-50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1000000000;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  display: block;
+}
+.User_full {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  width: 20%;
+  height: 75%;
+  transition: all 0.3s ease;
+  transform: translate(100%,-50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 0px 0px 10px;
+  z-index: 1000000000;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  display: block;
+}
+
+.Korzina_fwa {
+  position: fixed;
+left: 50%;
+transform: translate(-50%);
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 10px 0px;
+  border: none;
+  transition: all 0.3s ease;
+  background-color: rgb(178, 34, 34);
+  color: white;
+  font-size: 18px;
+}
+
+.korzina_list {
+  width: 100%;
+  margin-top: 80px;
+  height: 765%; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+.E_korz_element {
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  height:115px;
+
+}
+
+.E_korz_img {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.E_korz_title {
+  position: absolute;
+  left: 80px;
+  top: 5px;
+  font-size: 25px;
+}
+
+.E_korz_price {
+  position: absolute;
+  left: 78px;
+  bottom: 35px;
+  transition: scale 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
+  scale: 1.0;
+  cursor:pointer;
+}
+
+.E_korz_price:hover {
+
+  transform: translateX(10px);
+  scale: 1.3;
+}
+
+
+.E_korz_button {
+  position: absolute;
+  right: 0px;
+  bottom: 2px;
+  width: 99%;
+  height: 25%;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 18px;
+}
+.E_korz_button:hover {
+
+  font-size: 20px;
+  background-color: #0b5ed7;
+}
+
+.Ldg_cent {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 30px;
+}
+
+.Head {
+  display: none;
+}
+.Floter {
+  display: none;
+}
+
+
+.Anim {
+  position: absolute;
+  left: 0px;
+  
+  top: -300px;
+  width: 100%;
+  height: 200px;
+}
+
+.vaza_anim {
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100px;
+height: 100px;
+opacity: 0;
+transition: transform 1.5s ease ;
+transform: translate(150px,95px);
+
+}
+
+.water_anim {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  opacity:0;
+  transition: transform 1.5s ease;
+
+  transform: translate(-180px,10px) rotate(-45deg);
+
+}
+
+
